@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Dino Game</title>
-	 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <title>Unity Web Player | Dino Game</title>
+	  <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script>
   // инициализация VK Bridge при загрузке страницы
   document.addEventListener('DOMContentLoaded', function() {
@@ -36,9 +36,10 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/DINO_Color.data.gz",
-        frameworkUrl: "Build/DINO_Color.framework.js.gz",
-        codeUrl: "Build/DINO_Color.wasm.gz",
+        arguments: [],
+        dataUrl: "Build/DINO_Color.data.unityweb",
+        frameworkUrl: "Build/DINO_Color.framework.js.unityweb",
+        codeUrl: "Build/DINO_Color.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Zigurous",
         productName: "Dino Game",
